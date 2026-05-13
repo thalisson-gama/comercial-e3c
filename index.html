@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5NL6N28Z');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="theme-color" content="#0E2A4A" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="E3C Engenharia" />
+  <meta name="keywords" content="obras industriais, obras hospitalares, obras comerciais, construtora industrial, reforma hospitalar, ampliação de galpão, reengenharia de projeto, redução de custo de obra, engenharia técnica, E3C Engenharia" />
+
+  <title>E3C Engenharia | Obras industriais e hospitalares com engenharia técnica e redução de custo</title>
+  <meta name="description" content="Construtora especializada em obras industriais, hospitalares e comerciais. Reengenharia técnica para identificar até 20% de redução em custos de material, com equipe técnica de engenheiros e execução documentada." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="E3C Engenharia" />
+  <meta property="og:title" content="E3C Engenharia | Obras industriais, hospitalares e comerciais" />
+  <meta property="og:description" content="Engenharia técnica, reengenharia de projeto e execução segura. Até 20% de redução em custos de material, sem comprometer segurança, prazo ou qualidade." />
+  <meta property="og:image" content="img/hero.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="E3C Engenharia | Obras industriais e hospitalares" />
+  <meta name="twitter:description" content="Engenharia técnica, reengenharia de projeto e execução segura." />
+  <meta name="twitter:image" content="img/hero.webp" />
+
+  <link rel="icon" type="image/webp" href="img/logo.webp" />
+  <link rel="apple-touch-icon" href="img/logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       PALETA E3C | navy profundo + ciano (extraída do logotipo)
+    ============================================================ */
+    :root {
+      --navy:           #0E2A4A;
+      --navy-deep:      #081A30;
+      --navy-darker:    #050F1F;
+      --navy-soft:      #173554;
+      --navy-hover:     #143049;
+
+      --cyan:           #1FD4DE;
+      --cyan-light:     #5DEFF1;
+      --cyan-dark:      #00A8B0;
+      --cyan-soft:      rgba(31, 212, 222, 0.12);
+
+      --grad-brand:     linear-gradient(135deg, #1FD4DE 0%, #2A6DC9 55%, #0E2A4A 100%);
+      --grad-cta:       linear-gradient(110deg, #1FD4DE 0%, #2A6DC9 60%, #0E2A4A 100%);
+      --grad-cta-flow:  linear-gradient(110deg, #1FD4DE 0%, #2A6DC9 30%, #5DEFF1 50%, #2A6DC9 70%, #0E2A4A 100%);
+      --grad-text:      linear-gradient(120deg, #1FD4DE 0%, #5DEFF1 40%, #2A6DC9 100%);
+
+      --white:          #FFFFFF;
+      --off:            #F5F8FB;
+      --gray-50:        #F2F5F9;
+      --gray-100:       #E4E9F0;
+      --gray-200:       #CCD4DF;
+      --gray-500:       #6B7585;
+      --gray-700:       #344053;
+      --black:          #050F1F;
+
+      --font-main:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius-btn:   8px;
+      --radius-card:  14px;
+      --transition:   0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-sm:    0 2px 8px rgba(8, 26, 48, 0.08);
+      --shadow-md:    0 10px 30px rgba(8, 26, 48, 0.14);
+      --shadow-lg:    0 24px 64px rgba(8, 26, 48, 0.24);
+      --shadow-xl:    0 36px 90px rgba(8, 26, 48, 0.38);
+      --shadow-cyan:  0 14px 40px rgba(31, 212, 222, 0.32);
+    }
+
+    /* RESET */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { overflow-x: hidden; max-width: 100vw; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--navy-darker);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { max-width: 100%; display: block; height: auto; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: inherit; }
+    ::selection { background: var(--cyan); color: var(--navy-darker); }
+
+    /* UTILITIES */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--cyan-dark);
+      margin-bottom: 14px;
+    }
+    .section-label::before {
+      content: '';
+      width: 28px;
+      height: 2px;
+      background: var(--cyan);
+    }
+    .section-title {
+      font-size: clamp(26px, 3.8vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      line-height: 1.15;
+      color: var(--navy-darker);
+      text-wrap: balance;
+    }
+    .section-title em {
+      font-style: normal;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .section-subtitle {
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.7;
+      margin-top: 16px;
+      max-width: 720px;
+      color: var(--gray-700);
+      text-wrap: pretty;
+    }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 32px;
+      font-family: var(--font-main);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      border-radius: var(--radius-btn);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+      white-space: nowrap;
+      line-height: 1.2;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+
+    /* Primário com gradiente animado (shimmer) */
+    .btn-primary {
+      background: var(--grad-cta-flow);
+      background-size: 220% 220%;
+      animation: gradFlow 6s ease-in-out infinite;
+      color: var(--white);
+      box-shadow: var(--shadow-cyan);
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.32) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.7s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .btn-primary:hover::after { transform: translateX(100%); }
+    .btn-primary:hover { box-shadow: 0 18px 48px rgba(31, 212, 222, 0.45); }
+    @keyframes gradFlow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--navy-darker);
+      border-color: var(--navy);
+    }
+    .btn-outline:hover {
+      background: rgba(14, 42, 74, 0.05);
+      border-color: var(--cyan-dark);
+      color: var(--cyan-dark);
+    }
+
+    /* FADE-IN */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================================
+       TOP BANNER
+    ============================================================ */
+    .top-banner {
+      background: var(--navy-darker);
+      color: var(--white);
+      padding: 11px 20px;
+      text-align: center;
+      font-size: clamp(11px, 1.4vw, 13px);
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      line-height: 1.4;
+      border-bottom: 1px solid rgba(31, 212, 222, 0.18);
+    }
+    .top-banner strong {
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    /* ============================================================
+       NAV | apenas logo, sem CTA
+    ============================================================ */
+    .nav {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: 20;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-logo img {
+      height: 78px;
+      width: auto;
+      filter: drop-shadow(0 6px 18px rgba(8, 26, 48, 0.18));
+    }
+    @media (max-width: 680px) {
+      .nav { padding: 18px 18px; }
+      .nav-logo img { height: 60px; }
+    }
+
+    /* ============================================================
+       1. HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 110px 24px 100px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(245, 248, 251, 0.97) 100%),
+        url('img/hero.webp') center/cover no-repeat;
+      color: var(--navy-darker);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(31, 212, 222, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(42, 109, 201, 0.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    /* Marca d'água do logo no canto */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+      right: -120px;
+      width: 720px;
+      height: 360px;
+      background: url('img/logo-watermark.webp') center/contain no-repeat;
+      opacity: 0.05;
+      filter: blur(1px) brightness(0.4);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 960px; width: 100%; }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+      color: var(--cyan-dark);
+      margin-bottom: 24px;
+      padding: 9px 18px;
+      border: 1px solid rgba(31, 212, 222, 0.55);
+      border-radius: 100px;
+      background: rgba(31, 212, 222, 0.10);
+      backdrop-filter: blur(6px);
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--cyan-dark);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--cyan);
+    }
+    .hero-headline {
+      font-size: clamp(30px, 5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      line-height: 1.1;
+      margin: 0 auto 22px;
+      max-width: 880px;
+      color: var(--navy-darker);
+      text-wrap: balance;
+    }
+    .hero-headline em {
+      font-style: normal;
+      background: linear-gradient(120deg, #050F1F 0%, #2A6DC9 50%, #0E2A4A 100%);
+      background-size: 200% 200%;
+      animation: gradFlow 8s ease-in-out infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subheadline {
+      font-size: clamp(15px, 1.9vw, 18px);
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--gray-700);
+      max-width: 720px;
+      margin: 0 auto 32px;
+      text-wrap: pretty;
+    }
+
+    /* Counter de autoridade | 3 cells em uma linha */
+    .hero-counter {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 700px;
+      margin: 0 auto 36px;
+      padding: 22px 16px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 60%, var(--navy-darker) 100%);
+      border: 1px solid rgba(31, 212, 222, 0.32);
+      border-radius: var(--radius-card);
+      box-shadow:
+        0 18px 44px rgba(8, 26, 48, 0.28),
+        0 0 28px rgba(31, 212, 222, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-counter::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(31, 212, 222, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .counter-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .counter-cell:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -6px;
+      top: 20%;
+      bottom: 20%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.14);
+    }
+    .counter-value {
+      font-size: clamp(24px, 3.6vw, 38px);
+      font-weight: 800;
+      line-height: 1;
+      background: var(--grad-text);
+      background-size: 200% 200%;
+      animation: gradFlow 7s ease-in-out infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+      font-variant-numeric: tabular-nums;
+    }
+    .counter-value sup {
+      font-size: 0.5em;
+      vertical-align: super;
+      margin-left: 2px;
+      opacity: 0.85;
+    }
+    .counter-label {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      color: var(--navy-darker);
+      animation: bounce 2.4s ease-in-out infinite;
+    }
+    .hero-scroll svg { width: 18px; height: 18px; stroke: var(--cyan-dark); }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ============================================================
+       2. BENEFÍCIOS |3 dores resolvidas (versão compacta)
+    ============================================================ */
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--navy-darker);
+    }
+    .benefit-col {
+      padding: 56px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      transition: background var(--transition);
+    }
+    .benefit-col:nth-child(1) { background: var(--navy-deep); }
+    .benefit-col:nth-child(2) { background: var(--navy); }
+    .benefit-col:nth-child(3) { background: var(--navy-deep); }
+    .benefit-col:hover { background: var(--navy-soft); }
+    .benefit-col::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 64px;
+      height: 3px;
+      background: var(--grad-cta);
+    }
+    .benefit-icon {
+      width: 54px;
+      height: 54px;
+      background: rgba(31, 212, 222, 0.10);
+      border: 1px solid rgba(31, 212, 222, 0.28);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .benefit-icon svg { width: 24px; height: 24px; stroke: var(--cyan); fill: none; stroke-width: 2; }
+    .benefit-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--cyan);
+    }
+    .benefit-text {
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.35;
+      letter-spacing: -0.3px;
+    }
+    .benefit-desc { font-size: 14px; color: rgba(255, 255, 255, 0.7); line-height: 1.7; }
+
+    /* ============================================================
+       3. DOR
+    ============================================================ */
+    .pain {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--navy-darker);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .pain::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(31, 212, 222, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 10% 90%, rgba(31, 212, 222, 0.05) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .pain::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -200px;
+      transform: translateY(-50%);
+      width: 700px;
+      height: 400px;
+      background: url('img/logo-watermark.webp') center/contain no-repeat;
+      opacity: 0.025;
+      filter: blur(2px) brightness(2);
+      pointer-events: none;
+    }
+    .pain .container { position: relative; z-index: 1; }
+    .pain-head { text-align: center; max-width: 760px; margin: 0 auto 44px; }
+    .pain .section-title { color: var(--white); }
+    .pain .section-title em { -webkit-text-fill-color: transparent; background: var(--grad-text); -webkit-background-clip: text; background-clip: text; }
+    .pain .section-subtitle { color: rgba(255, 255, 255, 0.72); margin: 16px auto 0; }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .pain-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-card);
+      padding: 28px 30px;
+      transition: transform var(--transition), border-color var(--transition), background var(--transition);
+    }
+    .pain-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(31, 212, 222, 0.4);
+      background: rgba(31, 212, 222, 0.04);
+    }
+    .pain-card-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(31, 212, 222, 0.10);
+      border: 1px solid rgba(31, 212, 222, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .pain-card-icon svg { width: 20px; height: 20px; stroke: var(--cyan); fill: none; stroke-width: 2; }
+    .pain-card h3 {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: -0.2px;
+    }
+    .pain-card p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+    }
+    .pain-card .e3c-fix {
+      display: block;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+      color: var(--cyan-light);
+      font-weight: 500;
+    }
+    .pain-card .e3c-fix strong { color: var(--cyan); font-weight: 700; }
+    .pain-cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* ============================================================
+       4. DIFERENCIAIS | versão condensada (3 cards + faixa highlight)
+    ============================================================ */
+    .differentials {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--white);
+      position: relative;
+    }
+    .diff-head { text-align: center; max-width: 760px; margin: 0 auto 42px; }
+    .diff-head .section-label { justify-content: center; }
+    .diff-head .section-subtitle { margin: 16px auto 0; }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .diff-card {
+      background: var(--off);
+      border-radius: var(--radius-card);
+      padding: 32px 28px;
+      border: 1px solid var(--gray-100);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+    .diff-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--cyan);
+    }
+    .diff-card-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--grad-cta);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 20px rgba(31, 212, 222, 0.28);
+    }
+    .diff-card-icon svg { width: 22px; height: 22px; stroke: var(--white); fill: none; stroke-width: 2; }
+    .diff-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy-darker);
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+    }
+    .diff-card p {
+      font-size: 14.5px;
+      color: var(--gray-700);
+      line-height: 1.7;
+    }
+    .diff-highlight {
+      max-width: 1200px;
+      margin: 22px auto 0;
+      background: var(--navy-darker);
+      border-radius: var(--radius-card);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .diff-highlight::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(31, 212, 222, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .diff-highlight-text {
+      position: relative;
+      z-index: 1;
+    }
+    .diff-highlight-text strong {
+      display: block;
+      font-size: clamp(20px, 2.6vw, 28px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .diff-highlight-text strong em {
+      font-style: normal;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .diff-highlight-text span {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.72);
+      max-width: 580px;
+      display: block;
+    }
+    .diff-highlight .btn { position: relative; z-index: 1; flex-shrink: 0; }
+
+    /* ============================================================
+       REENGENHARIA + CONFIANÇA TÉCNICA
+    ============================================================ */
+    .reengineering {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--off);
+      position: relative;
+    }
+    .reengineering .diff-card { background: var(--white); }
+    .reeng-decisores {
+      max-width: 1200px;
+      margin: 24px auto 0;
+      padding: 22px 32px;
+      background: var(--white);
+      border: 1px solid var(--cyan);
+      border-radius: var(--radius-card);
+      box-shadow: 0 6px 22px rgba(8, 26, 48, 0.06);
+      text-align: center;
+      font-size: 14.5px;
+      color: var(--navy-darker);
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .reeng-decisores strong {
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+    @media (max-width: 720px) {
+      .reeng-decisores { font-size: 13.5px; padding: 18px 22px; }
+    }
+
+    /* ============================================================
+       5. SERVIÇOS | Industrial / Hospitalar / Comercial
+    ============================================================ */
+    .services {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--off);
+    }
+    .services-head { text-align: center; max-width: 760px; margin: 0 auto 44px; }
+    .services-head .section-label { justify-content: center; }
+    .services-head .section-subtitle { margin: 16px auto 0; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .service-card {
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      border: 1px solid var(--gray-100);
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    .service-card-img {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: var(--navy-darker);
+    }
+    .service-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+    .service-card:hover .service-card-img img { transform: scale(1.06); }
+    .service-card-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8, 26, 48, 0.05) 0%, rgba(8, 26, 48, 0.65) 100%);
+    }
+    .service-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--grad-cta);
+      color: var(--white);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      z-index: 1;
+      box-shadow: 0 6px 16px rgba(31, 212, 222, 0.32);
+    }
+    .service-body {
+      padding: 26px 26px 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-body h3 {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--navy-darker);
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+    .service-body > p {
+      font-size: 14px;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .service-list {
+      margin-top: auto;
+      display: grid;
+      gap: 7px;
+    }
+    .service-list li {
+      font-size: 13px;
+      color: var(--navy-darker);
+      font-weight: 500;
+      padding-left: 22px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .service-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 11px;
+      height: 7px;
+      border-left: 2px solid var(--cyan);
+      border-bottom: 2px solid var(--cyan);
+      transform: rotate(-45deg);
+    }
+
+    /* ============================================================
+       6. PROCESSO |7 etapas
+    ============================================================ */
+    .process {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--white);
+    }
+    .process-head { text-align: center; max-width: 760px; margin: 0 auto 52px; }
+    .process-head .section-label { justify-content: center; }
+    .process-head .section-subtitle { margin: 16px auto 0; }
+    .process-timeline {
+      max-width: 940px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      left: 33px;
+      top: 26px;
+      bottom: 26px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--cyan) 0%, var(--navy-deep) 100%);
+      opacity: 0.5;
+    }
+    .step-row {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 22px;
+      align-items: flex-start;
+      padding: 14px 0;
+      position: relative;
+    }
+    .step-num {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--navy-darker);
+      box-shadow: 0 6px 18px rgba(8, 26, 48, 0.12);
+      position: relative;
+      z-index: 2;
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+    }
+    .step-row:hover .step-num {
+      background: var(--grad-cta);
+      color: var(--white);
+      border-color: transparent;
+    }
+    .step-body { padding-top: 12px; }
+    .step-body h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy-darker);
+      margin-bottom: 6px;
+      letter-spacing: -0.2px;
+    }
+    .step-body p {
+      font-size: 14.5px;
+      color: var(--gray-700);
+      line-height: 1.7;
+      max-width: 680px;
+    }
+
+    /* ============================================================
+       7. QUEM SOMOS / SOBRE | texto + foto Evanério (fundida)
+    ============================================================ */
+    .about {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      background: var(--navy-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    .about::before {
+      content: '';
+      position: absolute;
+      bottom: -180px;
+      left: -150px;
+      width: 720px;
+      height: 460px;
+      background: url('img/logo-watermark.webp') center/contain no-repeat;
+      opacity: 0.04;
+      filter: blur(1px) brightness(2);
+      pointer-events: none;
+    }
+    .about-text {
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      color: var(--white);
+      position: relative;
+      z-index: 1;
+    }
+    .about-text .section-title { color: var(--white); }
+    .about-text .section-label { color: var(--cyan); }
+    .about-text p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.8;
+    }
+    .about-text p strong { color: var(--cyan-light); font-weight: 600; }
+    .about-signature {
+      margin-top: 12px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .about-signature-mark {
+      width: 4px;
+      height: 38px;
+      background: var(--grad-cta);
+      border-radius: 4px;
+    }
+    .about-signature-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.2px;
+    }
+    .about-signature-role {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-top: 2px;
+    }
+    .about-image {
+      position: relative;
+      background: var(--navy-darker);
+      overflow: hidden;
+      min-height: 540px;
+    }
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+    .about-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 40%, rgba(8, 26, 48, 0.4) 75%, rgba(8, 26, 48, 0.85) 100%),
+        linear-gradient(135deg, rgba(31, 212, 222, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .about-badge {
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      right: 32px;
+      z-index: 2;
+      color: var(--white);
+    }
+    .about-badge strong {
+      display: block;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .about-badge span {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--cyan-light);
+    }
+
+    /* ============================================================
+       8. CLIENTES | título com gradiente + logos
+    ============================================================ */
+    .clients {
+      padding: 64px 24px 56px;
+      background: var(--white);
+      text-align: center;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .clients-label {
+      font-size: clamp(14px, 1.8vw, 17px);
+      font-weight: 800;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      background: linear-gradient(120deg, #0E2A4A 0%, #2A6DC9 40%, #1FD4DE 70%, #0E2A4A 100%);
+      background-size: 200% 200%;
+      animation: gradFlow 8s ease-in-out infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .clients-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(24px, 4vw, 56px);
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    .client-logo {
+      height: clamp(38px, 5vw, 52px);
+      width: auto;
+      filter: grayscale(100%) brightness(0.6);
+      opacity: 0.75;
+      transition: filter var(--transition), opacity var(--transition), transform var(--transition);
+    }
+    .client-logo:hover {
+      filter: grayscale(0%) brightness(1);
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+
+    /* ============================================================
+       9. PORTFÓLIO | CARROSSEL
+    ============================================================ */
+    .gallery {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--navy-darker);
+      text-align: center;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -200px;
+      transform: translateY(-50%);
+      width: 700px;
+      height: 400px;
+      background: url('img/logo-watermark.webp') center/contain no-repeat;
+      opacity: 0.03;
+      filter: blur(2px) brightness(2);
+      pointer-events: none;
+    }
+    .gallery > * { position: relative; z-index: 1; }
+    .gallery .section-title { color: var(--white); }
+    .gallery .section-label { color: var(--cyan); justify-content: center; }
+    .gallery .section-subtitle { color: rgba(255, 255, 255, 0.72); margin: 16px auto 44px; }
+    .gallery-head { display: flex; flex-direction: column; align-items: center; }
+    .carousel-wrapper {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 8px;
+    }
+    .carousel-viewport {
+      overflow: hidden;
+      border-radius: var(--radius-card);
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+      gap: 20px;
+    }
+    .carousel-slide {
+      flex: 0 0 calc((100% - 40px) / 3);
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+    .carousel-slide:hover img { transform: scale(1.07); }
+    .carousel-slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(8, 26, 48, 0.65) 100%);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .carousel-slide:hover::after { opacity: 1; }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: var(--white);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .carousel-btn:hover { background: var(--cyan); transform: translateY(-50%) scale(1.08); }
+    .carousel-btn svg { width: 20px; height: 20px; stroke: var(--navy-darker); stroke-width: 2.5; fill: none; }
+    .carousel-btn:hover svg { stroke: var(--white); }
+    .carousel-prev { left: -20px; }
+    .carousel-next { right: -20px; }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.22);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition), width var(--transition);
+    }
+    .dot.active { background: var(--cyan); transform: scale(1.1); width: 28px; border-radius: 6px; }
+
+    /* ============================================================
+       10. FAQ
+    ============================================================ */
+    .faq {
+      padding: clamp(56px, 7vw, 84px) 24px;
+      background: var(--white);
+    }
+    .faq .container { max-width: 820px; }
+    .faq-head { text-align: center; margin-bottom: 40px; }
+    .faq-head .section-label { justify-content: center; }
+    .faq-head .section-subtitle { margin: 16px auto 0; }
+    .faq-item {
+      background: var(--off);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      transition: box-shadow var(--transition), border-color var(--transition), background var(--transition);
+      border: 1px solid var(--gray-100);
+    }
+    .faq-item:hover { border-color: var(--cyan); }
+    .faq-item.open { background: var(--white); border-color: var(--cyan); box-shadow: var(--shadow-sm); }
+    .faq-question {
+      width: 100%;
+      padding: 20px 24px;
+      background: none;
+      border: none;
+      font-family: var(--font-main);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy-darker);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      line-height: 1.4;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--cyan-dark);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .faq-item.open .faq-question::after { content: '−'; color: var(--cyan); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-item.open .faq-answer { max-height: 500px; }
+    .faq-answer p {
+      padding: 0 24px 20px;
+      font-size: 14.5px;
+      line-height: 1.75;
+      color: var(--gray-700);
+    }
+
+    /* ============================================================
+       11. FORMULÁRIO B2B
+    ============================================================ */
+    .form-section {
+      padding: clamp(56px, 7vw, 88px) 24px;
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-darker) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(31, 212, 222, 0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .form-section::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(31, 212, 222, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .form-section .section-label { color: var(--cyan); justify-content: center; }
+    .form-section .section-title { color: var(--white); }
+    .form-section .section-title em { background: var(--grad-text); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .form-section .section-subtitle { color: rgba(255, 255, 255, 0.72); margin: 16px auto 44px; }
+    .form-section .container { position: relative; z-index: 1; }
+    .form-head { text-align: center; display: flex; flex-direction: column; align-items: center; }
+
+    .steps-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 36px;
+    }
+    .step-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .step-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all var(--transition);
+    }
+    .step-circle.active   { background: var(--grad-cta); border-color: transparent; color: var(--white); }
+    .step-circle.complete { background: var(--cyan-dark); border-color: var(--cyan-dark); color: var(--white); }
+    .step-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      transition: color var(--transition);
+    }
+    .step-item.active .step-label   { color: var(--cyan); }
+    .step-item.complete .step-label { color: var(--cyan-dark); }
+    .step-connector {
+      width: 80px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.12);
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .step-connector-fill {
+      position: absolute;
+      left: 0; top: 0;
+      height: 100%;
+      background: var(--cyan);
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+
+    .form-card {
+      max-width: 620px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-card);
+      padding: 40px 38px;
+      backdrop-filter: blur(10px);
+    }
+    .form-step { display: none; }
+    .form-step.active { display: block; animation: fadeSlide 0.4s ease; }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(16px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .form-step-title {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .form-step-title::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: var(--cyan);
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-row .form-group { margin-bottom: 0; }
+    .form-group {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 2px solid transparent;
+      border-radius: 6px;
+      font-family: var(--font-main);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--navy-darker);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      appearance: none;
+    }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%230E2A4A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .form-group input::placeholder { color: #8A94A3; font-weight: 400; }
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(31, 212, 222, 0.22);
+    }
+    .form-group input.error,
+    .form-group select.error { border-color: #E74C3C; box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15); }
+    .error-msg {
+      font-size: 12px;
+      color: #FF8080;
+      margin-top: 6px;
+      display: none;
+      font-weight: 600;
+    }
+    .error-msg.show { display: block; }
+    .form-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .form-actions .btn { flex: 1; padding: 16px; font-size: 13px; }
+    .btn-back {
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+      animation: none;
+    }
+    .btn-back::after { display: none; }
+    .btn-back:hover { background: rgba(255, 255, 255, 0.12); box-shadow: none; }
+
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      animation: fadeSlide 0.5s ease;
+    }
+    .form-success.show { display: flex; }
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--grad-cta);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 36px rgba(31, 212, 222, 0.38);
+    }
+    .success-icon svg { width: 34px; height: 34px; stroke: var(--white); stroke-width: 3; fill: none; }
+    .form-success h3 { font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.3px; }
+    .form-success p { font-size: 15px; color: rgba(255, 255, 255, 0.75); text-align: center; line-height: 1.7; max-width: 460px; }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.4px;
+    }
+    .trust-item svg { width: 16px; height: 16px; stroke: var(--cyan); fill: none; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      position: relative;
+      padding: 70px 24px 36px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(5, 15, 31, 0.94), rgba(5, 15, 31, 0.96)),
+        url('img/footer-bg.webp') center/cover no-repeat;
+      color: rgba(255, 255, 255, 0.65);
+    }
+    .footer-logo-img {
+      height: 64px;
+      width: auto;
+      margin: 0 auto 22px;
+      display: block;
+      padding: 14px 26px;
+      background: var(--white);
+      border-radius: 14px;
+      box-shadow:
+        0 0 0 1px rgba(31, 212, 222, 0.4),
+        0 14px 36px rgba(0, 0, 0, 0.45),
+        0 0 28px rgba(31, 212, 222, 0.25);
+    }
+    .footer-divider {
+      width: 48px;
+      height: 2px;
+      background: var(--cyan);
+      margin: 0 auto 24px;
+    }
+    .footer-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+    .footer-info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .footer-info-item svg { width: 16px; height: 16px; stroke: var(--cyan); fill: none; }
+    .footer-copy { font-size: 13px; margin-bottom: 8px; color: rgba(255, 255, 255, 0.65); }
+    .footer-dev {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-dev a { color: var(--cyan); font-weight: 700; }
+
+    /* CTA fixo mobile */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9998;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      background: rgba(5, 15, 31, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(31, 212, 222, 0.2);
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .mobile-cta.visible { transform: translateY(0); }
+    .mobile-cta .btn { width: 100%; text-align: center; padding: 16px; font-size: 13px; }
+
+    /* RESPONSIVO */
+    @media (max-width: 1100px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); max-width: 720px; }
+      .diff-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 960px) {
+      .benefits { grid-template-columns: 1fr; }
+      .benefit-col { padding: 48px 28px; }
+      .about { grid-template-columns: 1fr; }
+      .about-text { padding: 56px 28px 44px; }
+      .about-image { min-height: 420px; }
+      .pain-grid { grid-template-columns: 1fr; }
+      .diff-highlight { flex-direction: column; align-items: flex-start; padding: 28px; }
+      .mobile-cta { display: block; }
+    }
+    @media (max-width: 720px) {
+      .services-grid { grid-template-columns: 1fr; max-width: 440px; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .hero-counter { grid-template-columns: 1fr 1fr; max-width: 380px; }
+      .counter-cell:nth-child(2)::after { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .container { padding: 0 18px; }
+      .hero { padding: 90px 18px 90px; }
+      .hero-eyebrow { font-size: 10px; padding: 7px 14px; letter-spacing: 2.2px; }
+      .hero-subheadline { font-size: 15px; }
+      .hero-buttons { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
+      .hero-buttons .btn { width: 100%; }
+      .hero-counter { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .counter-cell:nth-child(2)::after { display: block; }
+      .form-card { padding: 28px 22px; }
+      .form-actions { flex-direction: column-reverse; }
+      .form-actions .btn { width: 100%; }
+      .carousel-prev { left: 4px; }
+      .carousel-next { right: 4px; }
+      .step-connector { width: 48px; }
+      .about-text { padding: 48px 22px 36px; }
+      .about-image { min-height: 340px; }
+      .about-badge { bottom: 22px; left: 22px; right: 22px; }
+      .footer-info { gap: 12px; flex-direction: column; align-items: center; }
+      .process-timeline::before { left: 24px; }
+      .step-row { grid-template-columns: 50px 1fr; gap: 16px; }
+      .step-num { width: 50px; height: 50px; font-size: 17px; }
+    }
+    @media (max-width: 380px) {
+      .hero-headline { font-size: 28px; }
+      .section-title { font-size: 24px; }
+      .btn { padding: 14px 22px; font-size: 12px; }
+      .counter-value { font-size: 22px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NL6N28Z"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- ============================================================
+       TOP BANNER
+  ============================================================ -->
+  <div class="top-banner" role="note">
+    <strong>Reengenharia técnica E3C</strong>: identifique oportunidades de reduzir até 20% em custos de material sem comprometer segurança, prazo e qualidade.
+  </div>
+
+  <!-- ============================================================
+       1. HERO
+  ============================================================ -->
+  <header class="hero">
+
+    <nav class="nav" aria-label="Topo">
+      <a href="#" class="nav-logo" aria-label="E3C Engenharia">
+        <img src="img/logo.webp" alt="E3C Engenharia" width="200" height="60" />
+      </a>
+    </nav>
+
+    <div class="hero-content">
+
+      <span class="hero-eyebrow">Engenharia para obras de alto risco operacional</span>
+
+      <h1 class="hero-headline">
+        Obras industriais, hospitalares e comerciais com <em>reengenharia técnica e execução segura.</em>
+      </h1>
+
+      <p class="hero-subheadline">
+        Da análise do projeto à entrega técnica, a E3C revisa escopo, estrutura e execução para reduzir desperdícios, controlar custos e entregar obras complexas com mais previsibilidade.
+      </p>
+
+      <!-- Counter de autoridade |3 cells em uma linha -->
+      <div class="hero-counter" aria-label="Indicadores de autoridade da E3C Engenharia">
+        <div class="counter-cell">
+          <span class="counter-value" data-target="6" data-prefix="+">+0</span>
+          <span class="counter-label">Anos de<br>atuação técnica</span>
+        </div>
+        <div class="counter-cell">
+          <span class="counter-value" data-target="20" data-suffix="%">0<sup>%</sup></span>
+          <span class="counter-label">Redução em custo<br>de material com reengenharia</span>
+        </div>
+        <div class="counter-cell">
+          <span class="counter-value" data-target="100" data-suffix="%">0<sup>%</sup></span>
+          <span class="counter-label">Responsabilidade técnica<br>documentada em cada obra</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#formulario" class="btn btn-primary">Solicitar análise do projeto</a>
+        <a href="#processo" class="btn btn-outline">Ver nosso processo</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      Rolar
+    </div>
+  </header>
+
+  <!-- ============================================================
+       2. BENEFÍCIOS
+  ============================================================ -->
+  <section class="benefits" aria-label="Por que escolher a E3C">
+
+    <div class="benefit-col fade-in">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V12h6v9"/>
+        </svg>
+      </div>
+      <span class="benefit-label">Reengenharia de projeto</span>
+      <p class="benefit-text">Antes de executar, revisamos o projeto e reduzimos custo sem perder qualidade técnica.</p>
+      <p class="benefit-desc">Mesmo que o projeto chegue pronto, nossa equipe avalia fundação, estrutura, muro de contenção e galpão para encontrar onde é seguro otimizar. Já reduzimos de 10% a 20% no custo de material em obras anteriores.</p>
+    </div>
+
+    <div class="benefit-col fade-in" style="transition-delay:0.12s">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/>
+        </svg>
+      </div>
+      <span class="benefit-label">Equipe técnica de engenharia</span>
+      <p class="benefit-text">Engenheiros acompanhando o projeto do escopo à entrega técnica.</p>
+      <p class="benefit-desc">Indústria e hospital não toleram improviso. Cada obra é acompanhada por engenheiro responsável por escopo, suprimento, qualidade e cronograma, com relatórios e clareza de etapas.</p>
+    </div>
+
+    <div class="benefit-col fade-in" style="transition-delay:0.24s">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+        </svg>
+      </div>
+      <span class="benefit-label">Custo competitivo com padrão técnico</span>
+      <p class="benefit-text">Resultado técnico de empresa grande, com custo administrativo menor.</p>
+      <p class="benefit-desc">Estrutura enxuta significa dedicação real ao seu projeto e proposta comercial mais competitiva, sem abrir mão do padrão exigido por indústria, hospital ou operação comercial.</p>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       3. DOR | Por que indústria e hospital exigem mais
+  ============================================================ -->
+  <section class="pain fade-in" aria-label="O problema das obras técnicas mal executadas">
+    <div class="container">
+      <div class="pain-head">
+        <span class="section-label" style="justify-content:center;">Por que indústria e hospital exigem mais</span>
+        <h2 class="section-title">Obra técnica <em>não pode ser tratada como execução comum.</em></h2>
+        <p class="section-subtitle">
+          Em ambiente industrial ou hospitalar, qualquer falha de execução vira impacto na produção, no atendimento e na segurança operacional. A E3C entra exatamente nesses cenários para reduzir risco, custo e retrabalho.
+        </p>
+      </div>
+
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Projeto superdimensionado, custo inflado</h3>
+          <p>
+            Pilares, fundações, muros de contenção e galpões costumam chegar com margem de segurança muito acima do necessário, gerando material gasto sem retorno técnico.
+          </p>
+          <span class="e3c-fix"><strong>Como a E3C resolve:</strong> reengenharia antes da execução, redimensionando estrutura para reduzir custo com segurança.</span>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Retrabalho, atraso e improviso</h3>
+          <p>
+            Cada correção pós-obra em indústria ou hospital vira parada de produção, leito perdido ou setor inteiro fora de operação.
+          </p>
+          <span class="e3c-fix"><strong>Como a E3C resolve:</strong> equipe técnica em obra, planejamento de execução e controle de prazo do primeiro dia ao último.</span>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Menor preço sem critério técnico</h3>
+          <p>
+            O orçamento mais barato esconde material subdimensionado e proposta sem clareza de escopo, e o custo real só aparece no meio da obra.
+          </p>
+          <span class="e3c-fix"><strong>Como a E3C resolve:</strong> proposta com escopo aberto, materiais especificados e responsabilidade técnica documentada.</span>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Impacto na operação durante a obra</h3>
+          <p>
+            Obra em indústria mexe com linha de produção, logística e fluxo de pessoas. Em hospital, atinge atendimento, acessibilidade e funcionamento interno.
+          </p>
+          <span class="e3c-fix"><strong>Como a E3C resolve:</strong> cronograma compatível com a operação e protocolos para reduzir interferência no dia a dia.</span>
+        </div>
+
+      </div>
+
+      <div class="pain-cta">
+        <a href="#formulario" class="btn btn-primary">Avaliar minha obra com a E3C</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REENGENHARIA TÉCNICA + CONFIANÇA TÉCNICA
+  ============================================================ -->
+  <section class="reengineering fade-in" aria-label="Reengenharia técnica antes da execução">
+    <div class="container">
+      <div class="diff-head">
+        <span class="section-label" style="justify-content:center;">Reengenharia técnica</span>
+        <h2 class="section-title">Antes de executar, a E3C revisa o projeto <em>para encontrar economia segura.</em></h2>
+        <p class="section-subtitle">
+          Mesmo quando o cliente já chega com projeto pronto, nossa equipe técnica avalia fundação, estrutura, galpões, muros de contenção e demais pontos críticos para identificar oportunidades de redução de custo sem comprometer segurança, desempenho ou qualidade final.
+        </p>
+      </div>
+
+      <div class="diff-grid">
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Análise técnica do projeto</h3>
+          <p>Avaliamos o escopo existente para entender se há pontos superdimensionados, desperdícios ou oportunidades de otimização.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7"/><path d="M5 9v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9"/><path d="M9 21V13h6v8"/></svg>
+          </div>
+          <h3>Redução segura de materiais</h3>
+          <p>Quando há margem técnica, redimensionamos elementos para reduzir custo de material mantendo segurança e desempenho.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Economia repassada ao cliente</h3>
+          <p>As reduções identificadas na reengenharia são apresentadas com clareza e revertidas em benefício direto para a empresa contratante.</p>
+        </div>
+
+      </div>
+
+      <div class="diff-highlight" style="margin-top:32px;">
+        <div class="diff-highlight-text">
+          <strong>Confiança técnica <em>antes da proposta.</em></strong>
+          <span>Sabemos que obras industriais, hospitalares e comerciais exigem mais do que orçamento. Antes de avançar, a E3C apresenta escopo, etapas, responsabilidades, possibilidades de otimização e critérios técnicos para que <strong style="color:var(--cyan-light);font-weight:600;">suprimentos, engenharia e diretoria</strong> tenham clareza antes da contratação.</span>
+        </div>
+        <a href="#formulario" class="btn btn-primary">Solicitar análise técnica</a>
+      </div>
+
+      <div class="reeng-decisores">
+        <strong>Escopo claro para suprimentos.</strong> Segurança técnica para engenharia. Previsibilidade para diretoria.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. DIFERENCIAIS | versão condensada
+  ============================================================ -->
+  <section class="differentials fade-in" aria-label="Diferenciais da E3C">
+    <div class="container">
+      <div class="diff-head">
+        <span class="section-label">Por que a E3C</span>
+        <h2 class="section-title">Engenharia técnica aplicada <em>para quem decide por custo, risco e operação.</em></h2>
+        <p class="section-subtitle">
+          Em obras industriais, hospitalares e comerciais, o menor preço nem sempre representa o menor custo. A E3C atua para revisar o projeto, reduzir desperdícios e proteger a execução do início à entrega técnica.
+        </p>
+      </div>
+
+      <div class="diff-grid">
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3>Reengenharia com redução real de custo</h3>
+          <p>Revisamos cada projeto antes da execução para otimizar fundação, estrutura, muros e galpão, entregando até 20% de economia em material, com segurança preservada.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Equipe técnica presente, custo enxuto</h3>
+          <p>Engenheiros acompanhando cada etapa, sem a estrutura administrativa pesada das grandes construtoras. Mesmo padrão técnico, custo mais competitivo, dedicação real ao seu projeto.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Projeto e execução no mesmo time</h3>
+          <p>Atendemos quem chega com projeto pronto e quem precisa desenvolver do zero, com concepção, dimensionamento, reengenharia e execução com responsabilidade técnica documentada.</p>
+        </div>
+      </div>
+
+      <div class="diff-highlight">
+        <div class="diff-highlight-text">
+          <strong>Redução comprovada de <em>até 20% no custo de material</em></strong>
+          <span>Em projetos anteriores, identificamos otimizações seguras em fundação, estrutura e muro de contenção. A economia foi 100% repassada ao cliente.</span>
+        </div>
+        <a href="#formulario" class="btn btn-primary">Quero esse diagnóstico</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. SERVIÇOS
+  ============================================================ -->
+  <section class="services fade-in" aria-label="Serviços da E3C">
+    <div class="container">
+      <div class="services-head">
+        <span class="section-label">O que a E3C executa</span>
+        <h2 class="section-title">Três frentes técnicas, <em>um único padrão de engenharia.</em></h2>
+        <p class="section-subtitle">
+          Obras civis para indústria, saúde e operações comerciais, da construção nova à reforma de adequação, ampliação e melhoria operacional.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-card-img">
+            <span class="service-tag">Industrial</span>
+            <img loading="lazy" src="img/servico-industrial.webp" alt="Obra civil industrial | E3C Engenharia" width="800" height="500" />
+          </div>
+          <div class="service-body">
+            <h3>Obras civis industriais</h3>
+            <p>Execução técnica para indústrias alimentícias, têxteis, óleo e gás e linhas de produção em operação.</p>
+            <ul class="service-list">
+              <li>Construção e ampliação de galpões</li>
+              <li>Obra civil para linhas de produção</li>
+              <li>Vestiários industriais e adequação feminina</li>
+              <li>Plataformas industriais e balança rodoviária</li>
+              <li>Ampliação de prédios administrativos</li>
+              <li>Reformas de acessibilidade e adequação normativa</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-img">
+            <span class="service-tag">Hospitalar</span>
+            <img loading="lazy" src="img/servico-hospitalar.webp" alt="Obra hospitalar | E3C Engenharia" width="800" height="500" />
+          </div>
+          <div class="service-body">
+            <h3>Obras hospitalares</h3>
+            <p>Reformas, ampliações e adequações em hospitais, clínicas e redes de saúde, com protocolos para reduzir impacto no atendimento.</p>
+            <ul class="service-list">
+              <li>Reforma de prédios para operação médica</li>
+              <li>Criação de novos leitos</li>
+              <li>Centros clínicos e centros cirúrgicos</li>
+              <li>Salas de atendimento e adequação de andares</li>
+              <li>Reformas para melhoria operacional</li>
+              <li>Adequação normativa e acessibilidade</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card-img">
+            <span class="service-tag">Comercial</span>
+            <img loading="lazy" src="img/servico-comercial.webp" alt="Obra comercial | E3C Engenharia" width="800" height="500" />
+          </div>
+          <div class="service-body">
+            <h3>Obras comerciais</h3>
+            <p>Construção, reforma, ampliação e adequação de estruturas comerciais, de prédios administrativos a unidades de alta circulação.</p>
+            <ul class="service-list">
+              <li>Construção e reforma de unidades comerciais</li>
+              <li>Adequação de áreas administrativas</li>
+              <li>Ampliação de operações em funcionamento</li>
+              <li>Reformas de melhoria operacional</li>
+              <li>Adequação normativa e acessibilidade</li>
+              <li>Entrega técnica com checklist, documentação e responsabilidade registrada</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. PROCESSO |7 etapas
+  ============================================================ -->
+  <section class="process fade-in" id="processo" aria-label="Processo da E3C">
+    <div class="container">
+      <div class="process-head">
+        <span class="section-label">Como trabalhamos</span>
+        <h2 class="section-title">Do primeiro contato à entrega: <em>7 etapas técnicas.</em></h2>
+        <p class="section-subtitle">
+          Cada obra da E3C segue uma sequência clara, documentada e revisada por engenheiro responsável. Suprimentos e engenharia interna do cliente conseguem auditar cada etapa.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+
+        <div class="step-row">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Diagnóstico da demanda</h3>
+            <p>Entendemos o tipo de obra, o segmento da operação, o impacto esperado e o momento do projeto (cotação, planejamento, urgência ou obra futura).</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Visita técnica</h3>
+            <p>Engenheiro responsável vai até o local, valida condições reais, checa interferências e identifica restrições que o projeto desenhado ainda não previu.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Análise ou desenvolvimento do projeto</h3>
+            <p>Se o projeto já existe, fazemos análise técnica completa. Se ainda não existe, nosso time desenvolve do zero, com concepção, dimensionamento e detalhamento.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>Reengenharia e otimização</h3>
+            <p>Redimensionamos onde há margem técnica para reduzir custo de material em fundação, estrutura, muros e galpão. A economia identificada é repassada ao cliente.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3>Proposta técnica e comercial</h3>
+            <p>Escopo aberto, materiais especificados, responsabilidades técnicas, etapas, prazo e formato de contrato (fechado ou por administração) claramente definidos.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h3>Execução com acompanhamento</h3>
+            <p>Equipe técnica em obra, controle de qualidade, gestão de cronograma e relatórios. O cliente acompanha tudo sem precisar virar gestor de canteiro.</p>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <div class="step-num">7</div>
+          <div class="step-body">
+            <h3>Entrega e suporte</h3>
+            <p>Vistoria final, documentação técnica, checklist com o cliente e suporte pós-entrega. Obra fechada com responsabilidade técnica registrada.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. QUEM SOMOS | texto + foto Evanério (sobre + autoridade)
+  ============================================================ -->
+  <section class="about fade-in" aria-label="Sobre a E3C Engenharia">
+
+    <div class="about-text">
+      <span class="section-label">Sobre a E3C</span>
+      <h2 class="section-title">Uma empresa de engenharia construída para <em>obras técnicas, não para volume.</em></h2>
+      <p>
+        A E3C Engenharia é uma construtora especializada em obras <strong>industriais, hospitalares e comerciais</strong>. Atuamos do gerenciamento à construção, passando pela reengenharia técnica que reduz custo e protege o resultado operacional.
+      </p>
+      <p>
+        Em mais de <strong>6 anos de atuação</strong>, atendemos clientes recorrentes como indústrias alimentícias, têxteis, óleo e gás e redes de saúde, com cronograma, qualidade e custo dentro do esperado. Cada obra é acompanhada por engenheiro responsável, com escopo documentado e relatórios técnicos que suprimentos, engenharia interna e diretoria conseguem auditar.
+      </p>
+      <p>
+        Nossa proposta é simples: <strong>entregar o mesmo padrão técnico de uma construtora grande, com custo mais inteligente e dedicação real ao projeto</strong>, funcionando como um braço de engenharia ao lado do departamento técnico e de suprimentos do cliente.
+      </p>
+
+      <div class="about-signature">
+        <div class="about-signature-mark"></div>
+        <div>
+          <div class="about-signature-name">Evanério Silva</div>
+          <div class="about-signature-role">Fundador · E3C Engenharia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img loading="lazy" src="img/evanerio.webp" alt="Evanério Silva | fundador da E3C Engenharia" width="900" height="1100" />
+      <div class="about-badge">
+        <strong>Evanério Silva</strong>
+        <span>Fundador · E3C Engenharia</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       8. CLIENTES
+  ============================================================ -->
+  <section class="clients fade-in" aria-label="Clientes e parceiros">
+    <p class="clients-label">Empresas e operações atendidas pela E3C</p>
+    <div class="clients-row">
+      <img class="client-logo" src="img/marcas/consigaz.webp" alt="Consigaz" loading="lazy" />
+      <img class="client-logo" src="img/marcas/pilkington.webp" alt="Pilkington" loading="lazy" />
+      <img class="client-logo" src="img/marcas/bsl.webp" alt="BSL | Brasil Senior Living" loading="lazy" />
+      <img class="client-logo" src="img/marcas/vale-vitoria.webp" alt="Vale Vitória" loading="lazy" />
+      <img class="client-logo" src="img/marcas/sainte-marie.webp" alt="Sainte-Marie" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. PORTFÓLIO | CARROSSEL (22 obras)
+  ============================================================ -->
+  <section class="gallery fade-in" aria-label="Portfólio de obras E3C">
+    <div class="container">
+      <div class="gallery-head">
+        <span class="section-label">Portfólio técnico</span>
+        <h2 class="section-title">Obras industriais e comerciais <em>já entregues pela E3C.</em></h2>
+        <p class="section-subtitle">Frentes recorrentes em indústrias de óleo e gás, redes comerciais e operações que exigem critério técnico em cada etapa.</p>
+      </div>
+
+      <div class="carousel-wrapper" aria-label="Galeria de obras realizadas">
+        <button class="carousel-btn carousel-prev" aria-label="Obra anterior">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-01.webp" alt="Obra industrial | Consigaz Brasília" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-02.webp" alt="Obra industrial | Consigaz Campinas" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-03.webp" alt="Obra industrial | Consigaz Curitiba" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-04.webp" alt="Obra industrial | Consigaz Paulínia (SP)" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-05.webp" alt="Obra industrial | Consigaz Porto Belo" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-06.webp" alt="Obra industrial | Consigaz Ribeirão Preto" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-07.webp" alt="Obra industrial | Consigaz Mauá" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-08.webp" alt="Obra comercial | Shopping Flamingo" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-09.webp" alt="Obra industrial | vista aérea Consigaz Brasília" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-10.webp" alt="Obra industrial | Consigaz Brasília frente" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-11.webp" alt="Obra industrial | Consigaz Campinas detalhe" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-12.webp" alt="Obra industrial | Consigaz Campinas etapa" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-13.webp" alt="Obra industrial | Consigaz Curitiba vista" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-14.webp" alt="Obra industrial | Consigaz Curitiba estrutura" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-15.webp" alt="Obra industrial | Consigaz Paulínia execução" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-16.webp" alt="Obra industrial | Consigaz Paulínia frente" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-17.webp" alt="Obra industrial | Consigaz Porto Belo detalhe" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-18.webp" alt="Obra industrial | Consigaz Porto Belo estrutura" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-19.webp" alt="Obra industrial | Consigaz Ribeirão Preto" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-20.webp" alt="Obra industrial | Consigaz Mauá detalhe" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-21.webp" alt="Obra comercial | Shopping Flamingo execução" width="900" height="675" /></div>
+            <div class="carousel-slide"><img loading="lazy" src="img/obra-22.webp" alt="Obra comercial | Shopping Flamingo detalhe" width="900" height="675" /></div>
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-next" aria-label="Próxima obra">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-label="Páginas da galeria"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. FAQ
+  ============================================================ -->
+  <section class="faq fade-in" aria-label="Perguntas frequentes">
+    <div class="container">
+      <div class="faq-head">
+        <span class="section-label">Antes do próximo passo</span>
+        <h2 class="section-title">Perguntas frequentes</h2>
+        <p class="section-subtitle">As dúvidas mais comuns de quem está avaliando uma construtora para obra industrial, hospitalar ou comercial.</p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">A E3C atende empresas que já têm projeto pronto?</button>
+        <div class="faq-answer"><p>Sim. A maioria dos clientes chega com escopo ou projeto desenvolvido pela engenharia interna. Antes da execução, fazemos uma camada de reengenharia para identificar onde é seguro otimizar custo de material, e essa economia vai para o cliente. Também atendemos quem precisa desenvolver o projeto do zero.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Como funciona a reengenharia e até quanto é possível economizar?</button>
+        <div class="faq-answer"><p>Em projetos anteriores, conseguimos reduzir de 10% a 20% no custo de material, especialmente em galpões, muros de contenção, fundações e elementos estruturais que costumam vir superdimensionados. O processo é técnico, documentado e respeita integralmente os fatores de segurança normativos.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Vocês conseguem executar obra com a operação rodando?</button>
+        <div class="faq-answer"><p>Sim, é o cenário mais comum em indústria, hospital e operação comercial. O planejamento da execução é feito em conjunto com a equipe interna do cliente para minimizar impacto em linha de produção, atendimento ou fluxo de pessoas.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Como vocês competem com construtoras maiores em preço?</button>
+        <div class="faq-answer"><p>Trabalhamos com estrutura administrativa enxuta. Isso significa que entregamos o mesmo padrão técnico exigido por indústrias e hospitais com custo total mais competitivo, e com dedicação maior ao projeto. Em obras recorrentes, a diferença na proposta costuma ser significativa.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Quais formatos de contrato a E3C trabalha?</button>
+        <div class="faq-answer"><p>Trabalhamos com dois formatos: contrato fechado (E3C fornece material e mão de obra, faturado integralmente pela empresa) e por administração (faturamento de material direto com o cliente, com a E3C montando mapa de cotação com três fornecedores e gerenciando a obra). Definimos o modelo ideal já na proposta.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Como o departamento de suprimentos auditará o processo?</button>
+        <div class="faq-answer"><p>Tudo é documentado: escopo, materiais especificados, mapa de cotação, cronograma e relatórios de execução. A engenharia interna e suprimentos do cliente conseguem auditar cada etapa, validar fornecedores e acompanhar a obra com a transparência exigida em operação industrial e hospitalar.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Em quanto tempo recebo uma proposta técnica?</button>
+        <div class="faq-answer"><p>Após o primeiro contato e a visita técnica (quando aplicável), nossa equipe estrutura a proposta com escopo, materiais e cronograma. O prazo varia conforme a complexidade da obra, mas o objetivo é dar ao decisor uma proposta pronta para análise pelo departamento de engenharia e suprimentos no menor tempo viável.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. FORMULÁRIO B2B
+  ============================================================ -->
+  <section class="form-section fade-in" id="formulario">
+    <div class="container">
+      <div class="form-head">
+        <span class="section-label">Dê o primeiro passo</span>
+        <h2 class="section-title">Solicite a análise técnica <em>da sua obra.</em></h2>
+        <p class="section-subtitle">
+          Nossa equipe avalia o escopo ou projeto, agenda uma visita técnica quando necessário e retorna com uma proposta técnica e comercial clara para suprimentos, engenharia ou diretoria aprovarem com segurança.
+        </p>
+      </div>
+
+      <div class="steps-indicator" aria-label="Progresso do formulário">
+        <div class="step-item active" id="stepItem1">
+          <div class="step-circle active" id="stepCircle1">1</div>
+          <span class="step-label">Seus dados</span>
+        </div>
+        <div class="step-connector"><div class="step-connector-fill" id="stepConnector"></div></div>
+        <div class="step-item" id="stepItem2">
+          <div class="step-circle" id="stepCircle2">2</div>
+          <span class="step-label">Sua obra</span>
+        </div>
+      </div>
+
+      <form class="form-card" id="leadForm" onsubmit="return false;" novalidate>
+
+        <div class="form-step active" id="formStep1" role="group" aria-labelledby="step1heading">
+          <h3 class="form-step-title" id="step1heading">Dados de contato</h3>
+
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Carlos Andrade" autocomplete="name" required />
+            <span class="error-msg" id="nomeError">Por favor, insira seu nome completo.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail corporativo *</label>
+            <input type="email" id="email" name="email" placeholder="seunome@empresa.com.br" autocomplete="email" required />
+            <span class="error-msg" id="emailError">Por favor, insira um e-mail válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">Telefone / WhatsApp *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 0 0000-0000" autocomplete="tel" required />
+            <span class="error-msg" id="whatsappError">Por favor, insira um telefone válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa *</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Razão social ou nome fantasia" autocomplete="organization" required />
+            <span class="error-msg" id="empresaError">Por favor, insira o nome da empresa.</span>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" onclick="nextStep()">Continuar →</button>
+          </div>
+        </div>
+
+        <div class="form-step" id="formStep2" role="group" aria-labelledby="step2heading">
+          <h3 class="form-step-title" id="step2heading">Sobre a sua obra</h3>
+
+          <div class="form-group">
+            <label for="terreno">Tipo de obra *</label>
+            <select id="terreno" name="terreno" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="industrial">Industrial</option>
+              <option value="hospitalar">Hospitalar</option>
+              <option value="comercial">Comercial</option>
+              <option value="reforma_adequacao">Reforma / Adequação</option>
+              <option value="ampliacao">Ampliação</option>
+              <option value="galpao">Galpão</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="error-msg" id="terrenoError">Por favor, selecione o tipo de obra.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="projeto">Sua empresa já possui projeto? *</label>
+            <select id="projeto" name="projeto" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="projeto_pronto">Sim, já tenho projeto</option>
+              <option value="escopo_inicial">Tenho escopo inicial</option>
+              <option value="precisa_desenvolver">Ainda preciso desenvolver o projeto</option>
+            </select>
+            <span class="error-msg" id="projetoError">Por favor, selecione uma opção.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Local da obra *</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade / UF" required />
+            <span class="error-msg" id="cidadeError">Por favor, insira o local da obra.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="segmento">Segmento *</label>
+              <select id="segmento" name="segmento" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="alimenticia">Indústria alimentícia</option>
+                <option value="textil">Indústria têxtil</option>
+                <option value="oleo_gas">Óleo e gás</option>
+                <option value="quimica">Química / petroquímica</option>
+                <option value="saude">Hospital / clínica / rede de saúde</option>
+                <option value="comercio">Comércio / varejo</option>
+                <option value="logistica">Logística / armazenagem</option>
+                <option value="outro">Outro</option>
+              </select>
+              <span class="error-msg" id="segmentoError">Selecione um segmento.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="renda">Momento da obra *</label>
+              <select id="renda" name="renda" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="cotacao">Cotação</option>
+                <option value="planejamento">Planejamento</option>
+                <option value="urgente">Obra urgente</option>
+                <option value="proximos_meses">Próximos meses</option>
+              </select>
+              <span class="error-msg" id="rendaError">Selecione o momento.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cargo">Melhor momento para contato</label>
+            <select id="cargo" name="cargo">
+              <option value="" disabled selected>Selecione (opcional)</option>
+              <option value="manha">Pela manhã</option>
+              <option value="tarde">À tarde</option>
+              <option value="comercial">Horário comercial</option>
+              <option value="whatsapp">Pelo WhatsApp, qualquer horário</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-back" onclick="prevStep()">← Voltar</button>
+            <button type="submit" class="btn btn-primary" onclick="submitForm()">Solicitar análise →</button>
+          </div>
+        </div>
+
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Recebemos a sua solicitação.</h3>
+          <p>Um engenheiro da E3C vai analisar o seu projeto ou escopo e entrar em contato em até um dia útil para alinhar visita técnica e proposta. Obrigado pela confiança.</p>
+        </div>
+
+      </form>
+
+      <div class="trust-badges">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Engenheiro responsável
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Dados protegidos
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Proposta sem compromisso
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Resposta em 1 dia útil
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <img src="img/logo.webp" alt="E3C Engenharia" class="footer-logo-img" width="180" height="56" />
+    <div class="footer-divider"></div>
+
+    <div class="footer-info">
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Atendimento em todo o Brasil</span>
+      </div>
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Atendimento técnico e suprimentos</span>
+      </div>
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        <span>Obras industriais · hospitalares · comerciais</span>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 E3C Engenharia. Todos os direitos reservados.</p>
+    <p class="footer-dev">Desenvolvido por <a href="https://m2black.com.br" target="_blank" rel="noopener">M² BLACK</a></p>
+  </footer>
+
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#formulario" class="btn btn-primary">Solicitar análise do projeto</a>
+  </div>
+
+  <script>
+    'use strict';
+
+    /* FADE-IN */
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    /* FORM MULTI-STEP */
+    let currentStep = 1;
+
+    function nextStep() {
+      if (!validateStep1()) return;
+      currentStep = 2;
+      document.getElementById('formStep1').classList.remove('active');
+      document.getElementById('formStep2').classList.add('active');
+      updateStepIndicator();
+    }
+
+    function prevStep() {
+      currentStep = 1;
+      document.getElementById('formStep2').classList.remove('active');
+      document.getElementById('formStep1').classList.add('active');
+      updateStepIndicator();
+    }
+
+    function updateStepIndicator() {
+      const c1 = document.getElementById('stepCircle1');
+      const c2 = document.getElementById('stepCircle2');
+      const i1 = document.getElementById('stepItem1');
+      const i2 = document.getElementById('stepItem2');
+      const conn = document.getElementById('stepConnector');
+
+      if (currentStep === 2) {
+        c1.classList.remove('active'); c1.classList.add('complete');
+        i1.classList.remove('active'); i1.classList.add('complete');
+        c2.classList.add('active');
+        i2.classList.add('active');
+        conn.style.width = '100%';
+      } else {
+        c1.classList.add('active'); c1.classList.remove('complete');
+        i1.classList.add('active'); i1.classList.remove('complete');
+        c2.classList.remove('active');
+        i2.classList.remove('active');
+        conn.style.width = '0%';
+      }
+    }
+
+    function validateStep1() {
+      let valid = true;
+      const nome = document.getElementById('nome');
+      const email = document.getElementById('email');
+      const whatsapp = document.getElementById('whatsapp');
+      const empresa = document.getElementById('empresa');
+
+      if (nome.value.trim().length < 3) { showError(nome, 'nomeError'); valid = false; }
+      else { clearError(nome, 'nomeError'); }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) { showError(email, 'emailError'); valid = false; }
+      else { clearError(email, 'emailError'); }
+
+      if (whatsapp.value.replace(/\D/g, '').length < 10) { showError(whatsapp, 'whatsappError'); valid = false; }
+      else { clearError(whatsapp, 'whatsappError'); }
+
+      if (empresa.value.trim().length < 2) { showError(empresa, 'empresaError'); valid = false; }
+      else { clearError(empresa, 'empresaError'); }
+
+      return valid;
+    }
+
+    function validateStep2() {
+      let valid = true;
+      const terreno = document.getElementById('terreno');
+      const projeto = document.getElementById('projeto');
+      const cidade = document.getElementById('cidade');
+      const renda = document.getElementById('renda');
+      const segmento = document.getElementById('segmento');
+
+      if (!terreno.value) { showError(terreno, 'terrenoError'); valid = false; }
+      else { clearError(terreno, 'terrenoError'); }
+
+      if (!projeto.value) { showError(projeto, 'projetoError'); valid = false; }
+      else { clearError(projeto, 'projetoError'); }
+
+      if (cidade.value.trim().length < 2) { showError(cidade, 'cidadeError'); valid = false; }
+      else { clearError(cidade, 'cidadeError'); }
+
+      if (!renda.value) { showError(renda, 'rendaError'); valid = false; }
+      else { clearError(renda, 'rendaError'); }
+
+      if (!segmento.value) { showError(segmento, 'segmentoError'); valid = false; }
+      else { clearError(segmento, 'segmentoError'); }
+
+      return valid;
+    }
+
+    function showError(input, errId) {
+      input.classList.add('error');
+      document.getElementById(errId).classList.add('show');
+    }
+    function clearError(input, errId) {
+      input.classList.remove('error');
+      document.getElementById(errId).classList.remove('show');
+    }
+
+    /* WEBHOOK */
+    const WEBHOOK_URL = 'https://m2black.atenderbem.com/webhookcapture/capture/e713ba340f1d43f9a97f20faab1afa7f';
+
+    (function persistUTMs() {
+      const params = new URLSearchParams(window.location.search);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+        .forEach(k => {
+          const v = params.get(k);
+          if (v !== null) sessionStorage.setItem(k, v);
+        });
+    })();
+
+    function getUTMs() {
+      return {
+        utm_source:   sessionStorage.getItem('utm_source')   || '',
+        utm_medium:   sessionStorage.getItem('utm_medium')   || '',
+        utm_campaign: sessionStorage.getItem('utm_campaign') || '',
+        utm_term:     sessionStorage.getItem('utm_term')     || '',
+        utm_content:  sessionStorage.getItem('utm_content')  || ''
+      };
+    }
+
+    function getDateTimeBR() {
+      const d = new Date();
+      const pad = n => String(n).padStart(2, '0');
+      return {
+        Data:    `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`,
+        Horario: `${pad(d.getHours())}:${pad(d.getMinutes())}`
+      };
+    }
+
+    function getSelectLabel(id) {
+      const el = document.getElementById(id);
+      if (!el || !el.selectedOptions || !el.selectedOptions.length) return '';
+      const opt = el.selectedOptions[0];
+      if (!opt.value) return '';
+      return (opt.text || '').trim();
+    }
+
+    function submitForm() {
+      if (!validateStep2()) return;
+
+      const submitBtn = document.querySelector('#formStep2 .btn-primary');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+
+      const whatsappDigits = document.getElementById('whatsapp').value.replace(/\D/g, '');
+      const dt = getDateTimeBR();
+      const utms = getUTMs();
+
+      const payload = {
+        Nome:     document.getElementById('nome').value.trim(),
+        Email:    document.getElementById('email').value.trim(),
+        WhatsApp: whatsappDigits,
+
+        empresa:        document.getElementById('empresa').value.trim(),
+        tipo_obra:      getSelectLabel('terreno'),
+        possui_projeto: getSelectLabel('projeto'),
+        local_obra:     document.getElementById('cidade').value.trim(),
+        segmento:       getSelectLabel('segmento'),
+        momento_obra:   getSelectLabel('renda'),
+        melhor_contato: getSelectLabel('cargo'),
+
+        Nome_do_site:   'E3C Engenharia',
+        Nome_da_pagina: document.title,
+        URL_da_pagina:  window.location.href,
+        Data:           dt.Data,
+        Horario:        dt.Horario,
+
+        utm_source:   utms.utm_source,
+        utm_medium:   utms.utm_medium,
+        utm_campaign: utms.utm_campaign,
+        utm_term:     utms.utm_term,
+        utm_content:  utms.utm_content
+      };
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'lead_form_submitted',
+        formName: 'analise_obra_e3c',
+        leadData: payload
+      });
+
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Erro no envio');
+        showSuccess();
+      })
+      .catch((err) => {
+        console.warn('Webhook AtenderBem falhou:', err);
+        showSuccess();
+      });
+
+      function showSuccess() {
+        document.getElementById('formStep2').classList.remove('active');
+        document.getElementById('formSuccess').classList.add('show');
+        document.getElementById('stepCircle2').classList.add('complete');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    }
+
+    /* CARROSSEL */
+    (function initCarousel() {
+      const track = document.getElementById('carouselTrack');
+      const dotsContainer = document.getElementById('carouselDots');
+      const slides = track.querySelectorAll('.carousel-slide');
+      const prevBtn = document.querySelector('.carousel-prev');
+      const nextBtn = document.querySelector('.carousel-next');
+
+      let current = 0;
+      let autoplayTimer;
+
+      function getSlidesPerView() {
+        if (window.innerWidth <= 680) return 1;
+        if (window.innerWidth <= 960) return 2;
+        return 3;
+      }
+
+      function buildDots() {
+        dotsContainer.innerHTML = '';
+        const pages = Math.ceil(slides.length / getSlidesPerView());
+        for (let i = 0; i < pages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', `Página ${i + 1}`);
+          dot.addEventListener('click', () => { resetAutoplay(); goTo(i); });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function getSlideWidth() {
+        const perView = getSlidesPerView();
+        const gap = 20;
+        return (track.parentElement.offsetWidth - gap * (perView - 1)) / perView;
+      }
+
+      function goTo(page) {
+        const perView = getSlidesPerView();
+        const maxPage = Math.ceil(slides.length / perView) - 1;
+        current = Math.max(0, Math.min(page, maxPage));
+        const slideW = getSlideWidth();
+        const gap = 20;
+        track.style.transform = `translateX(-${current * (slideW + gap) * perView}px)`;
+        document.querySelectorAll('.dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      prevBtn.addEventListener('click', () => { resetAutoplay(); goTo(current - 1); });
+      nextBtn.addEventListener('click', () => { resetAutoplay(); goTo(current + 1); });
+
+      function startAutoplay() {
+        autoplayTimer = setInterval(() => {
+          const perView = getSlidesPerView();
+          const maxPage = Math.ceil(slides.length / perView) - 1;
+          goTo(current < maxPage ? current + 1 : 0);
+        }, 5000);
+      }
+      function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
+
+      window.addEventListener('resize', () => {
+        buildDots();
+        goTo(0);
+      });
+
+      buildDots();
+      goTo(0);
+      startAutoplay();
+    })();
+
+    /* MÁSCARA WHATSAPP */
+    document.getElementById('whatsapp').addEventListener('input', function() {
+      let v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 6) v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+      else if (v.length > 2) v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+      else if (v.length > 0) v = `(${v}`;
+      this.value = v;
+    });
+
+    /* CTA FIXO MOBILE */
+    (function() {
+      const mobileCta = document.getElementById('mobileCta');
+      const formSection = document.getElementById('formulario');
+      if (!mobileCta || !formSection) return;
+
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        const formRect = formSection.getBoundingClientRect();
+        const formVisible = formRect.top < window.innerHeight && formRect.bottom > 0;
+
+        if (scrollY > 400 && !formVisible) {
+          mobileCta.classList.add('visible');
+        } else {
+          mobileCta.classList.remove('visible');
+        }
+      }, { passive: true });
+    })();
+
+    /* COUNTER ANIMADO */
+    (function() {
+      const counters = document.querySelectorAll('.counter-value[data-target]');
+      let animated = false;
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !animated) {
+            animated = true;
+            counters.forEach(counter => {
+              const target = parseInt(counter.dataset.target, 10);
+              const suffix = counter.dataset.suffix || '';
+              const prefix = counter.dataset.prefix || '';
+              const duration = 1600;
+              const start = performance.now();
+              function tick(now) {
+                const t = Math.min(1, (now - start) / duration);
+                const eased = 1 - Math.pow(1 - t, 3);
+                const value = Math.round(eased * target);
+                counter.innerHTML = prefix + value + (suffix ? '<sup>' + suffix + '</sup>' : '');
+                if (t < 1) requestAnimationFrame(tick);
+              }
+              requestAnimationFrame(tick);
+            });
+            counterObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+
+      counters.forEach(c => counterObserver.observe(c));
+    })();
+
+  </script>
+
+</body>
+</html>
